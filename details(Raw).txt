@@ -1,0 +1,55 @@
+Soul Satisified Brand Color:
+
+Primary Color - Blue - #0065E3
+Secondary Color - Yellow - #FFEC00
+Tertiary Color - Orange - #FFB300
+ 
+primary gradient - 
+
+Color i used in the Web Site: I'll classify those based in the color shades and name it where it used.
+
+yellow bg gradient: yellow1 - #FFF8C5 to yellow2 - #F9EFA2
+
+Main Hero Text color - #003C87
+
+yellow chip text color - #805300
+
+yellow chip bg color - #FFEC00
+
+yellow chip stroke color - #E0C400
+
+marque bg color- #0065E3
+
+marque text in normal state- #white
+
+marque text in hover state - #FFEC00
+
+blue bg gradient: blue1 - #DFEEFF to blue2 - #CBE3FF
+
+blue chip text color - #0065E3
+
+blue chip bg color - #white
+
+blue chip stroke color - #0065E3
+
+In the design we have two product card.
+
+normal product card:
+
+normal card bg : #white
+
+normal card product name text:#2F3843
+
+normal card product desc text:#7C8898
+
+normal card weight chip background- #white.
+
+normal card weight chip text and border- #0065E3
+
+normal card weight chip background hover state- #FFF8C5
+
+normal card weight chip background clicked state - #0065E3
+
+normal card weight chip text and border clicked state- #white
+
+ 
