@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.cont{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.primary-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 1rem 1.5rem;
+    background-color: #0065E3;
+    background: #0065E3;
+    /* background: -moz-linear-gradient(top, #0065E3 0%, #0051b4 100%);
+    background: -webkit-linear-gradient(top, #0065E3 0%, #0051b4 100%);
+    background: linear-gradient(to bottom, #0065E3 0%, #0051b4 100%); */
+    color:#fff;
+    border: 1px solid #0065E3;
+    border: 1px solid #003C87;
+    border-bottom: 0.2rem solid #003C87;
+    transition: 0.5s;
+    border-radius: 6rem;
+    font-size: 1rem;
+    font-weight: 700;
+    scale: 0.9;
+}
+
+.primary-btn:hover{
+    border: 1px solid #0065E3;
+     background: #0065E3;
+    /* background: -moz-linear-gradient(top, #0065E3 0%, #0065E3 100%);
+    background: -webkit-linear-gradient(top, #0065E3 0%, #0065E3 100%);
+    background: linear-gradient(to bottom, #0065E3 0%, #0065E3 100%); */
+    text-shadow: 2px 2px 0px rgba(0,60,135,0.46);
+    border-bottom: 0rem solid #003C87;
+    transition: 0.1s;
+    scale: 1;
+}
+
+
+.btn-outline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 1rem 1.5rem;
+    background-color:transparent;
+    background: transparent;
+    color: #0065E3;
+    outline: 1px solid #0065E3;
+    outline-offset: -1px;
+    border: none;
+    border-bottom: 0.2rem solid #0065E3;
+    transition: 0.3s ease;
+    border-radius: 6rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.btn-outline:hover {
+    outline: 1px solid #0065E3;
+    background: #fff460;
+    text-shadow: 1px 1px 0px rgba(177, 177, 177, 0.46);
+    border-bottom: 0.2rem solid transparent;
+    transform: translateY(1.5px);
+    transition: 0.1s ease;
+    gap:0.3rem;
+    padding: 1rem 1.45rem;
+}
+
+.btn-outline:hover svg {
+    /* transform: translate(2px, -2px); */
+    /* Applies the exact same shadow effect as the text using drop-shadow */
+    filter: drop-shadow(2px 2px 0px rgba(0,60,135,0.46));
+}
