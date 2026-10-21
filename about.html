@@ -90,7 +90,7 @@
 
                 <!-- Right Column: Founder Image Slot -->
                 <div class="founder-image-wrapper">
-                    <img src="./assets/slide1.png" alt="Founder of Soul Satisfied" class="founder-img">
+                    <img src="https://dhanushgopi.github.io/static/media/Dhanush%20Full.858a1c0bfc5100de59e7.png" alt="Founder of Soul Satisfied" class="founder-img">
                 </div>
 
             </div>
@@ -327,7 +327,47 @@
                 </div>
             </div>
         </div>
+        
+        
+        <!-- PRODUCT GALLERY SHOWCASE SECTION -->
+        <section class="gallery-showcase-section">
+            <div class="gallery-showcase-container">
+                
+                <!-- Section Header -->
+                <div class="products-header">
+                    <div class="badge-yellow">VISUAL FEAST</div>
+                    <h2 class="products-title" style="color: var(--hero-text-main);">
+                        BROWNIED OUT <span>CREATIONS</span>
+                    </h2>
+                    <p class="reviews-description" style="max-width: 600px; text-align: center; margin-top: 8px; color: var(--hero-desc);">
+                        Explore our handcrafted fudge brownies across all varieties. Filter by your favorite flavor or load more to see our full baking gallery!
+                    </p>
+                </div>
 
+                <!-- Interactive Filter Buttons -->
+                <div class="gallery-filters" id="galleryFilters">
+                    <button class="filter-btn active" onclick="filterGallery('all', this)">All Varieties</button>
+                    <button class="filter-btn" onclick="filterGallery('classic', this)">Classic Brownie</button>
+                    <button class="filter-btn" onclick="filterGallery('dark', this)">Dark Delight</button>
+                    <button class="filter-btn" onclick="filterGallery('triple', this)">Triple Treat</button>
+                    <button class="filter-btn" onclick="filterGallery('celebration', this)">Celebration Box</button>
+                    <button class="filter-btn" onclick="filterGallery('seasonal', this)">Seasonal Specials</button>
+                </div>
+
+                <!-- Gallery Grid (ID ADDED BACK HERE) -->
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Dynamic Items Injected via JS -->
+                </div>
+
+                <!-- Load More / View More Action Container -->
+                <div class="gallery-action-container" id="loadMoreContainer">
+                    <button class="btn-primary" onclick="loadMoreGallery()">
+                        Load More Creations 🍫
+                    </button>
+                </div>
+
+            </div>
+        </section>
        
       
 
@@ -612,6 +652,7 @@
     
     <!-- Link to Separate JavaScript File -->
     <script src="scripts/app.js"></script>
+    <script src="scripts/gallery.js"></script>
 
 </body>
 </html>
