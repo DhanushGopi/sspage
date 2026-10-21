@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Link to Separate CSS Stylesheet -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 </head>
 <body>
 
@@ -18,9 +19,12 @@
         <p>Chennai's Truly Satisfying Brownies are made here💛!</p>
     </div>
 
+  
+    
+
     <!-- STICKY NAVBAR HEADER -->
     <header class="navbar-header">
-        <!-- Logo Slot (Empty for your SVG code) -->
+        <!-- Logo Slot -->
         <div class="nav-logo-slot">
             <svg width="183" height="49" viewBox="0 0 183 49" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M59.831 41.051C59.0086 40.2147 58.0761 39.2668 58.155 38.0372C58.1936 37.4443 58.4799 36.7563 59.172 36.6062C59.3163 36.5721 59.4665 36.5708 59.6114 36.6025C59.7564 36.6342 59.8923 36.698 60.009 36.7892C60.1197 36.8815 60.207 36.9986 60.2637 37.1309C60.3205 37.2631 60.3452 37.4069 60.3358 37.5504C60.3205 37.718 60.3559 37.8863 60.4373 38.0337C60.5188 38.1811 60.6426 38.3008 60.7929 38.3775C60.9644 38.4589 61.1539 38.4957 61.3435 38.4845C61.5332 38.4733 61.717 38.4144 61.8777 38.3135C62.0174 38.2268 62.1332 38.1068 62.2146 37.9643C62.296 37.8218 62.3405 37.6613 62.344 37.4974C62.3746 37.0253 62.2845 36.5533 62.0822 36.1254C61.88 35.6976 61.5721 35.3278 61.1875 35.0508C60.8176 34.8025 60.3934 34.6461 59.9504 34.5948C59.5074 34.5436 59.0586 34.5989 58.6415 34.7562C56.6498 35.4443 55.9008 37.5394 56.2074 39.1607C56.4644 40.5276 57.3657 41.4956 58.2376 42.4325C58.5276 42.7436 58.8269 43.0656 59.0949 43.395C59.4436 43.8214 59.9117 44.4783 59.9485 45.2249C59.9723 45.6878 59.8365 46.3521 59.3776 46.6888C58.6708 47.2158 57.496 46.9706 56.9325 46.8535C56.1982 46.6998 55.3299 46.3374 55.4346 45.4939C55.5153 44.8424 55.0454 44.5442 54.5736 44.5442C54.2942 44.5384 54.0225 44.636 53.811 44.8181C53.5994 45.0002 53.4631 45.254 53.4282 45.5305C53.3685 45.9857 53.4259 46.4487 53.5952 46.8757C53.7644 47.3028 54.0398 47.6798 54.3956 47.9715C55.1849 48.6339 56.2312 48.8279 57.0518 48.923C57.3521 48.9596 57.6542 48.9792 57.9568 48.9816C58.626 48.9935 59.2892 48.8546 59.8971 48.5754C60.7235 48.157 61.3622 47.4445 61.6868 46.579C62.2889 45.0254 61.8704 43.3529 60.4845 41.7445C60.288 41.5158 60.0659 41.2907 59.831 41.051Z" fill="#0065E3"/>
@@ -42,7 +46,7 @@
 
         </div>
 
-        <!-- Nav Links -->
+        <!-- Desktop Nav Links -->
         <nav class="nav-links">
             <a href="#products">Our Menu</a>
             <a href="#celebration">Celebration Box</a>
@@ -50,11 +54,27 @@
             <a href="#process">How It Works</a>
         </nav>
 
-        <!-- Nav CTA Button -->
-        <div class="nav-action">
+        <!-- Desktop Order Now Button (Hidden on Mobile) -->
+        <div class="nav-action" style="display: flex;">
             <a href="#products" class="btn-primary nav-cta-btn">
                 Order Now
             </a>
+        </div>
+
+        <!-- Hamburger Toggle Button -->
+        <button class="hamburger-menu" aria-label="Toggle Navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Mobile Slide-out Menu Panel (Order Now is now inside here) -->
+        <div class="mobile-nav-menu">
+            <a href="#products">Our Menu</a>
+            <a href="#celebration">Celebration Box</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#process">How It Works</a>
+            <a href="#products" class="btn-primary" style="padding: 0.75rem 1.5rem; text-decoration: none; width: 100%; text-align: center; justify-content: center;">Order Now </a>
         </div>
     </header>
 

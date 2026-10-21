@@ -85,3 +85,5 @@ window.loadMoreGallery = function() {
 document.addEventListener('DOMContentLoaded', () => {
     renderGallery();
 });
+
+

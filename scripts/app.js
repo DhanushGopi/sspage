@@ -287,3 +287,42 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+
+
+//HAMBURGER MENU
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger-menu') || document.querySelector('.mobile-menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-nav-menu');
+    
+    if (!hamburger || !mobileMenu) return;
+
+    // Create background overlay element dynamically if it doesn't exist
+    let overlay = document.querySelector('.mobile-nav-overlay');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.className = 'mobile-nav-overlay';
+        document.body.appendChild(overlay);
+    }
+
+    function toggleMenu() {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('open');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+    }
+
+    hamburger.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
+
+    // Close menu when clicking any nav link inside it
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (mobileMenu.classList.contains('open')) {
+                toggleMenu();
+            }
+        });
+    });
+});
