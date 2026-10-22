@@ -1133,3 +1133,62 @@
         margin-top: 8px;
     }
 }
+
+
+/* ==========================================================================
+   SECTION TITLES - LINE HEIGHT / GAP FIX
+   ========================================================================== */
+.founder-title,
+.brand-title,
+.products-title,
+.reviews-title,
+.cta-title,
+.hero-title {
+    line-height: 1.5 !important;
+}
+
+/* ==========================================================================
+   BRAND SECTION LOGO - VERTICAL SPACING FIX
+   ========================================================================== */
+.brand-image-slot {
+    height: auto !important;
+    max-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.brand-image-slot svg {
+    max-height: 260px; /* Adjust this value to make the logo larger or smaller */
+    width: 100%;
+    object-fit: contain;
+}
+
+
+/* ==========================================================================
+   GALLERY FILTERS - HORIZONTAL SCROLLABLE ROW
+   ========================================================================== */
+.gallery-filters {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    justify-content: flex-start !important;
+    gap: 10px !important;
+    width: 100% !important;
+    max-width: 100%;
+    padding: 8px 4px 16px 4px !important;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
+
+/* Hide scrollbar for a sleek look while keeping native touch/mouse scroll */
+.gallery-filters::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-filters .filter-btn {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+    scroll-snap-align: start;
+}

@@ -326,3 +326,55 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+
+
+
+
+// HAMBURGER MENU (Fixed active class toggle for 'X' animation)
+function initHamburgerMenu() {
+    const hamburger = document.querySelector('.hamburger-menu') || document.querySelector('.mobile-menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-nav-menu');
+    
+    if (!hamburger || !mobileMenu) return;
+
+    let overlay = document.querySelector('.mobile-nav-overlay');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.className = 'mobile-nav-overlay';
+        document.body.appendChild(overlay);
+    }
+
+    function toggleMenu() {
+        hamburger.classList.toggle('active');
+        mobileMenu.classList.toggle('open');
+        overlay.classList.toggle('active');
+        document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+    }
+
+    // Attach listeners safely using a dataset flag to prevent duplicates
+    if (!hamburger.dataset.listenerAttached) {
+        hamburger.addEventListener('click', toggleMenu);
+        overlay.addEventListener('click', toggleMenu);
+        hamburger.dataset.listenerAttached = "true";
+    }
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+        if (!link.dataset.listenerAttached) {
+            link.addEventListener('click', () => {
+                if (mobileMenu.classList.contains('open')) {
+                    toggleMenu();
+                }
+            });
+            link.dataset.listenerAttached = "true";
+        }
+    });
+}
+
+// Initialize on load or immediately if already ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initHamburgerMenu);
+} else {
+    initHamburgerMenu();
+}
